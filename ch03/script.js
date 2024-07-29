@@ -26,3 +26,17 @@ var getMin = function(x, y) {
 console.log(getMin(3,2))
 
 //Exercício 2
+var isEven = function(x) {
+    if (x == 0) {
+        console.log("É par.")
+    } else if (x == 1) {
+        console.log("É ímpar.")
+    } else {
+        return isEven(x - 2)
+    }
+}
+
+
+isEven(4)
+
+//Exercício 3
