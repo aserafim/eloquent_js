@@ -27,7 +27,9 @@ console.log(getMin(3,2))
 
 //Exercício 2
 var isEven = function(x) {
-    if (x == 0) {
+    if (x < 0) {
+        console.log("Insira um valor maior ou igual a 0.")
+    } else if (x == 0) {
         console.log("É par.")
     } else if (x == 1) {
         console.log("É ímpar.")
@@ -37,6 +39,6 @@ var isEven = function(x) {
 }
 
 
-isEven(4)
+isEven(-1)
 
 //Exercício 3
