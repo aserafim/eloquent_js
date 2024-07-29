@@ -42,3 +42,16 @@ var isEven = function(x) {
 isEven(-1)
 
 //Exercício 3
+var countBs = function(text) {
+    var counter = 0;
+    for (i = 0; i < text.length - 1; i++) {
+        if (text.charAt(i) == "B") {
+            counter += 1;
+        }
+    }
+
+    return counter;
+}
+
+text = "Babaloo"
+console.log(countBs(text))
