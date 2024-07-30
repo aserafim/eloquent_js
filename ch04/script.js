@@ -19,3 +19,21 @@ var sum = function(array){
 }
 
 //console.log("A soma total é: ", sum(range(1,10)));
+
+var rangeWithIncrement = function(start, end, inc){
+    lista = []
+
+    if (inc == undefined) {
+        inc = 1;
+    }
+
+    value = start + inc;
+
+    for (i = start; i <= end; i++) {
+        lista.push(value);
+        value = value + inc;
+    }
+    return lista
+}
+
+//console.log(rangeWithIncrement(1,10,-2))
