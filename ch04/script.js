@@ -86,4 +86,31 @@ function addEntry(list, element1, element2) {
 
 addEntry(list,element1, element2)
 
-console.log(list)
+//console.log(list)
+
+
+
+function arrayToList(array) {
+    list = [];
+    for (i = 0; i <= array.length - 1; i++) {
+        element = {
+            value : array[i],
+            rest : null
+        }
+
+        list.push(element);
+    }
+
+    for (i = 0; i <= list.length - 1; i++) {
+        if (i < list.length - 1) {
+            list[i].rest = list[i + 1];
+        } else {
+            list[i].rest = null
+        }
+    }
+
+    return list
+}
+
+newList = arrayToList([1,2,3])
+console.log(newList)
