@@ -49,3 +49,45 @@ function reverseArray(array) {
 }
 
 //console.log(reverseArray([1,2,3]))
+
+/* function reverseArrayInPlace(array) {
+    temp = array.length - 2
+    for(i = 0; i <= array.length - 1; i++) {
+        if(temp >= 0){
+            array[length - 1] =  array[length - 2]
+            array[array.length - 2] = array[temp]
+            temp -= 1
+        }
+    }
+}
+
+console.log(reverseArrayInPlace([1,2,3])) */
+
+var list = {
+    value : 1,
+    rest : {
+        value : 2,
+        rest : {
+            value : 3,
+            rest: null
+        }
+    }
+}
+
+
+var element1 = {
+    value : 1,
+    rest : null
+}
+
+var element2 = {
+    value : 2,
+    rest : null
+}
+
+list = []
+
+list.push(element1)
+
+console.log(element1)
+
