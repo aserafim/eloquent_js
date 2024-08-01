@@ -63,18 +63,9 @@ function reverseArray(array) {
 
 console.log(reverseArrayInPlace([1,2,3])) */
 
-var list = {
-    value : 1,
-    rest : {
-        value : 2,
-        rest : {
-            value : 3,
-            rest: null
-        }
-    }
-}
 
-
+//Exercicio para crirar e inserir elementos
+//numa lista
 var element1 = {
     value : 1,
     rest : null
@@ -85,9 +76,14 @@ var element2 = {
     rest : null
 }
 
+
 list = []
+function addEntry(list, element1, element2) {
+    element1.rest = element2
+    list.push(element1)
+    list.push(element2)
+}
 
-list.push(element1)
+addEntry(list,element1, element2)
 
-console.log(element1)
-
+console.log(list)
