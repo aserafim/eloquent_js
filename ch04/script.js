@@ -112,5 +112,17 @@ function arrayToList(array) {
     return list
 }
 
-newList = arrayToList([1,2,3])
-console.log(newList)
+//newList = arrayToList([1,2,3])
+//console.log(newList)
+
+
+function listToArray(list) {
+    array = []
+    for(i = 0; i <= list.length - 1; i++){
+        array[i] = list[i].value
+    }
+    return array
+}
+
+novoArray = listToArray(arrayToList([1,2,3]))
+console.log(novoArray)
