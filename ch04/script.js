@@ -37,3 +37,15 @@ var rangeWithIncrement = function(start, end, inc){
 }
 
 //console.log(rangeWithIncrement(1,10,-2))
+
+function reverseArray(array) {
+    newArray = [];
+    j = 0;
+    for(i = array.length - 1; i >= 0; i--) {
+            newArray[j] = array[i];
+            j += 1;
+    }
+    return newArray;
+}
+
+//console.log(reverseArray([1,2,3]))
